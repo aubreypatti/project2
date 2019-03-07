@@ -1,0 +1,57 @@
+  @supports (grid-area: auto) {
+  }
+  .container {
+    display: grid;
+    background-color: pink;
+    grid-template-columns: repeat (5,1fr)
+    grid-template-rows: repeat (4, 1fr)
+    grid-template-areas:
+      'navbar navbar navbar navbar navbar'
+      'side side header header side'
+      'side main main side side'
+      'side side button side side'
+  }
+   .header {
+     grid-area: header;
+     color: white;
+     font-family: impact, sans-serif;
+
+   }
+   .main {
+     grid-area: main;
+     color: black;
+     font-family: "century gothic"
+     }
+
+   }
+   .button {
+     grid-area: button;
+   }
+  /*Navigation Bar*/
+    .navbar{
+        grid-area: navbar;
+        background-color: orange;
+        overflow:hidden;
+    }
+    .navbar a{
+      float:left;
+      color:white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px
+      font-family: Roboto;
+    }
+    .navbar a:active {
+      background-color: blue;
+      color: white;
+    }
+    .navbar a:hover {
+      background-color: blue;
+      color: white;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
